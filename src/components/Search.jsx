@@ -3,8 +3,7 @@ const Search = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault()
     let temp = event.target.query.value
-    //setSearchQuery(event.target.query.value)
-    props.history.push(`/Search/${temp}`)
+    props.history.push(`/search/${temp}`)
     event.target.query.value = ''
   }
 
